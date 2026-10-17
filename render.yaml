@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: tic-tac-toe
+    runtime: docker
+    plan: free
+    dockerfilePath: ./backend/tictactoe/Dockerfile
+    dockerContext: ./backend/tictactoe
+    healthCheckPath: /state
